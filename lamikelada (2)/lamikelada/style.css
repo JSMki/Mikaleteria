@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    width: 70px;
+    display: block;
+}
+
+.nav-header {
+    background-color: #E02179;
+    color: #FFFFFF;
+    padding: 25px;
+    text-align: center;
+}
+
+nav {
+    background-color: #000000;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #E02179;
+}
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 25px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-bottom: 31px;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+#productos h2 {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    filter: blur(7px);
+    width: 100%;
+    height: fit-content;
+}
+
+.banner-text h3 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 25px;
+    margin: 0;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    color: white;
+}
+
+.banner-text p {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    text-align: center;
+}
+
+.footer-contenido h3 {
+    color: #E02179;
+    margin-bottom: 10px;
+}
+
+.footer-contenido p {
+    margin: 6px 0;
+}
+
+.footer-contenido a {
+    color: #ec8dbd;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 25px;
+    padding-top: 10px;
+    text-align: center;
+}

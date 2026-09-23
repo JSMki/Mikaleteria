@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+         /* Logo y encabezado  */
+        .logo {
+            position: absolute;
+            top: 10px;
+            width: 70px;
+            display: block;
+        }
+
+        header {
+            background-color: #E02179;
+            color: #FFFFFF;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        P{
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding-bottom: 31px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #productos h2 {
+            display: block;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .imgs {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Títulos */
+        h1,h2, h3, h4 {
+            color: black;
+            text-align: center;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #000000;
+            color: #FFFFFF;
+            padding: 30px 20px 15px;
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+        .footer-contenido {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            text-align: center;
+
+        }
+
+        .footer-contenido h3 {
+            color: #E02179;
+            margin-bottom: 10px;
+        }
+
+        .footer-contenido p {
+            margin: 6px 0;
+        }
+
+        .footer-contenido a {
+            color: #ec8dbd;
+            text-decoration: none;
+        }
+
+        .copyright {
+            margin-top: 25px;
+            padding-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Pie de pagina -->
+    <header>
+        <h1>Servicios</h1>
+
+        <a href="../index.html">
+            <img src="../images/logo.png"
+            alt="Logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./sucursales.html">Sucursales</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Posibles servicios -->
+        <h1>También contamos con:</h1><section id="productos">
+
+            <div class="cards-container">
+
+                <article class="card">
+                    <img src="https://imgs.search.brave.com/3hbtdI0B6xqv-sU6tVuL0dQUhqE75qnrdMOcgfdAYHw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMjE1/MzQ5MDA5My9lcy9m/b3RvL3RyZXMtdmFz/b3MtZGUtaGVsYWRv/LWNvbi1ib2xhcy1k/ZWNvcmFkYXMtZW4t/bGEtbWVzYS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9aHBG/ZldKUnQ3LW9hWHp5/dXVVbElMM0d0cnI5/UnFzTE5uY3dEc21N/UTMxUT0" class="imagenes">
+
+                    <p><strong>SERVICIOS PARA FIESTAS</strong></p>
+                </article>
+
+                <article class="card">
+                    <img src="https://imgs.search.brave.com/tS1yGayHbUw98LKhZbenykDRRMehUiwewWpq6kVddXM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50aW1lb3V0LmNv/bS9pbWFnZXMvMTA1/ODA2ODU2Lzc1MC80/MjIvaW1hZ2UuanBn" class="imagenes">
+
+                    <p><strong>VENTA A MAYOREO</strong></p>
+                </article>
+
+                <article class="card">
+                    <img src="https://imgs.search.brave.com/PH_FLRkUG46RZUM3UhNL3KHGDYxQJ4hqMd_ACu0LbC8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXJr/ZXRwbGFjZS5jYW52/YS5jb20vbkRVRncv/TUFHWkk0bkRVRncv/MS90bC9jYW52YS1j/b2xlY2NpJUMzJUIz/bi1kZS1kZWxpY2lv/c29zLWhlbGFkb3Mt/ZW4tYmFsZGVzLU1B/R1pJNG5EVUZ3Lmpw/Zw" alt="Gelatinas" class="imagenes">
+
+                    <p><strong>PEDIDOS PERSONALIZADOS</strong></p>
+                </article>
+
+            </div>
+
+        </section>
+        <hr>
+        <!-- Menu -->
+        <h2>No te olvides de consultar nuestro menu</h2>     
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4p5H7e1t98QkcqpO660pM-8qrLS6dxbYqC7i9Y15KEZpFlib7WgIl-ZND&s=10https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4p5H7e1t98QkcqpO660pM-8qrLS6dxbYqC7i9Y15KEZpFlib7WgIl-ZND&s=10" class="imgs"> 
+    </main>
+    <hr>
+    <!-- Footer -->
+     <footer>
+        <section class="footer-contenido">
+            <div>
+                <h3>La Mikelana</h3>
+                <p>El sabor que alegra tus días.</p>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>
+                    Correo electrónico:
+                    <a href="mailto:contacto@lamikelana.com">contacto@lamikelana.com</a>
+                    <br>
+                    Teléfono: <a href="tel:+52 222 815 7087">+52 222 815 7087</a>
+                    <br>
+                    Dirección: Kabah No. 2, SM 222, Benito Juarez, Quintana Roo, 77517
+
+                </p>
+
+                <div>
+                    <h3>Horarios</h3>
+                    <p>Lunes a domingo</p>
+                    <p>10:00 a.m. - 9:00 p.m.</p>
+                </div>
+            </div>
+
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <p>
+                    <a href="https://www.facebook.com/lamikelana" target="_blank">Facebook</a>
+                    <br>
+                    <a href="https://www.instagram.com/lamikelana" target="_blank">Instagram</a>
+                    <br>
+                    <a href="https://twitter.com/lamikelana" target="_blank">Twitter</a>
+                </p>
+            </div>
+            <hr>
+            <p class="copyright">   
+                © 2026 La Mikelana | Todos los derechos reservados
+            </p>
+
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucursales | La Mikelana</title>
+
+    <!-- css -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            width: 70px;
+            display: block;
+        }
+
+        header {
+            background-color: #E02179;
+            color: #FFFFFF;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #E02179;
+        }
+
+        main {
+            padding: 20px;
+            margin: 0 auto;
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .sucursales-filtro {
+            flex: 3;
+
+        }
+
+        #sucursales-lista {
+            flex: 1;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        .caja-filtros,
+        .sucursal {
+            background-color: #FFFFFF;
+            padding: 15px;
+            border: 2px solid #E02179;
+            margin-bottom: 15px;
+        }
+
+        h2,
+        h3,
+        h4 {
+            color: #E02179;
+        }
+
+        .boton {
+            background-color: #E02179;
+            color: #FFFFFF;
+            padding: 8px 12px;
+            text-decoration: none;
+            font-size: 15px;
+            cursor: pointer;
+            border: 1px solid #000000;
+        }
+
+        .boton:hover {
+            background-color: #000000;
+            border-color: #E02179;
+            border-width: 3px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #000000;
+            color: #FFFFFF;
+            padding: 30px 20px 15px;
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+        .footer-contenido {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            text-align: center;
+
+        }
+
+        .footer-contenido h3 {
+            color: #E02179;
+            margin-bottom: 10px;
+        }
+
+        .footer-contenido p {
+            margin: 6px 0;
+        }
+
+        .footer-contenido a {
+            color: #ec8dbd;
+            text-decoration: none;
+        }
+
+        .copyright {
+            margin-top: 25px;
+            padding-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<!--inicia achetemele-->
+
+<body>
+
+    <header>
+        <h1>Ubicación de Sucursales</h1>
+        <a href="../index.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaDDPzRqQEmUWJK-qoaXv8ucickjL7dKVFPT8xE4TpVQ&s=10"
+                alt="Logo" class="logo">
+        </a>
+
+        <!-- paginas conlink (por hacer las demas) -->
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./sucursales.html">Sucursales</a>
+            <a href="./contacto.html">Contacto</a>
+            
+        </nav>
+
+    </header>
+    
+    <main>
+
+        <section class="sucursales-filtro">
+            <h2>Encuentra tu tienda más cercana</h2>
+            <p>Conoce nuestras ubicaciones en diferentes estados y visítanos.</p>
+
+            <section class="caja-filtros">
+                <h3>Buscar Sucursal</h3>
+                <form action="#">
+                    <label for="codigo-postal">Buscar por código postal:</label>
+                    <input type="text" id="codigo-postal" placeholder="Ej. 09070">
+                    <br><br>
+                    <label for="estado">Selecciona un estado:</label>
+                    <select id="estado">
+                        <option value="">Todos los estados</option>
+                        <option value="cdmx">Ciudad de México</option>
+                        <option value="edomex">Estado de México</option>
+                        <option value="puebla">Puebla</option>
+                        <option value="qroo">Quintana Roo</option>
+                    </select>
+                    <br><br>
+                    <input type="reset" class="boton" value="Limpiar Filtro">
+                    <input type="submit" class="boton" value="Buscar">
+                </form>
+            </section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.366539424649!2d-98.2257389!3d19.003563500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb9ac4f3640f3%3A0x4e1136058deb83bc!2sLa%20michoacana!5e0!3m2!1ses-419!2smx!4v1789072647074!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+
+
+        <!-- seccion laeral nuestras csusucales -->
+        <aside id="sucursales-lista">
+            <section>
+                <h3>Nuestras Sucursales:</h3>
+
+                <div class="sucursal">
+                    <h4>CDMX - Zapotitlan</h4>
+                    <p>Francisco Jiménez No. 134, La Conchita Zapotitlán, Tláhuac, Ciudad de México, 13360</p>
+                    <a href="#" class="boton">Ver</a>
+                </div>
+
+                <div class="sucursal">
+                    <h4>CDMX - Reforma</h4>
+                    <p>Paseo de la Reforma No. 358, Guerrero, Cuauhtémoc, Ciudad de México, 06300</p>
+                    <a href="#" class="boton">Ver</a>
+                </div>
+
+                <div class="sucursal">
+                    <h4>Puebla - Centro</h4>
+                    <p>Avenida Reforma No. 102, Centro Histórico, Puebla, 72000</p>
+                    <a href="#" class="boton">Ver</a>
+                </div>
+
+                <div class="sucursal">
+                    <h4>Cancun - Los Heroes</h4>
+                    <p>Kabah No. 2, SM 222, Benito Juarez, Quintana Roo, 77517</p>
+                    <a href="#" class="boton">Ver</a>
+                </div>
+            </section>
+        </aside>
+
+    </main>
+
+    <!-- footer (falta agregar cosas) -->
+    <footer>
+        <section class="footer-contenido">
+            <div>
+                <h3>La Mikelana</h3>
+                <p>El sabor que alegra tus días.</p>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>
+                    Correo electrónico:
+                    <a href="mailto:contacto@lamikelana.com">contacto@lamikelana.com</a>
+                    <br>
+                    Teléfono: <a href="tel:+52 222 815 7087">+52 222 815 7087</a>
+                    <br>
+                    Dirección: Kabah No. 2, SM 222, Benito Juarez, Quintana Roo, 77517
+
+                </p>
+
+                <div>
+                    <h3>Horarios</h3>
+                    <p>Lunes a domingo</p>
+                    <p>10:00 a.m. - 9:00 p.m.</p>
+                </div>
+            </div>
+
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <p>
+                    <a href="https://www.facebook.com/lamikelana" target="_blank">Facebook</a>
+                    <br>
+                    <a href="https://www.instagram.com/lamikelana" target="_blank">Instagram</a>
+                    <br>
+                    <a href="https://twitter.com/lamikelana" target="_blank">Twitter</a>
+                </p>
+            </div>
+            <hr>
+            <p class="copyright">
+                © 2026 La Mikelana | Todos los derechos reservados
+            </p>
+
+        </section>
+    </footer>
+
+</body>
+
+</html>

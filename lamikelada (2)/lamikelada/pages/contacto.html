@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            width: 70px;
+            display: block;
+        }
+
+        header {
+            background-color: #E02179;
+            color: #FFFFFF;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #E02179;
+        }
+
+        main {
+            padding: 20px;
+            margin: 0 auto;
+        
+            gap: 30px;
+        }
+
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        .caja-filtros,
+        .sucursal {
+            background-color: #FFFFFF;
+            padding: 15px;
+            border: 2px solid #E02179;
+            margin-bottom: 15px;
+        }
+
+        h2,
+        h3,
+        h4 {
+            color: #E02179;
+        }
+
+        .boton {
+            background-color: #E02179;
+            color: #FFFFFF;
+            padding: 8px 12px;
+            text-decoration: none;
+            font-size: 15px;
+            cursor: pointer;
+            border: 1px solid #000000;
+        }
+
+
+        .boton:hover {
+            background-color: #000000;
+            border-color: #E02179;
+            border-width: 3px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #000000;
+            color: #FFFFFF;
+            padding: 30px 20px 15px;
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+        .footer-contenido {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            text-align: center;
+
+        }
+
+        .footer-contenido h3 {
+            color: #E02179;
+            margin-bottom: 10px;
+        }
+
+        .footer-contenido p {
+            margin: 6px 0;
+        }
+
+        .footer-contenido a {
+            color: #ec8dbd;
+            text-decoration: none;
+        }
+
+        .copyright {
+            margin-top: 25px;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        #img-ass{
+            justify-content: center;
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <main>
+            <section>
+                <h1>Contacto </h1>
+                <p> Haz tu pedido en el siguiente apartado, brindandonos tu informacion o ponte encontacto directo con
+                    nosotros. </p>
+
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="Logo" class="logo">
+            </a>
+
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./servicios.html">Servicios</a>
+                <a href="./sucursales.html">Sucursales</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+
+            </secction>
+    </header>
+
+    <section>
+        <h2>Datos del Pedido</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="numero">Numero de telefono:</label>
+            <br>
+            <input type="numero" id="numero" name="numero" required>
+            <p>Pedido:</p>
+            <Div>
+                <input type="radio" name="nieve" value="nieve" id="nieve">
+                <label for="masculino">Nieve</label>
+            </Div>
+
+            <Div>
+                <input type="radio" name="helado" id="helado" value="helado">
+                <label for="femenino">Helado</label>
+            </Div>
+
+            <Div>
+                <input type="radio" name="paleta" id="paleta" value="paleta">
+                <label for="femenino">Paleta</label>
+            </Div>
+
+            <Div>
+                <input type="radio" name="agua" id="agua" value="agua">
+                <label for="femenino">Agua</label>
+            </Div>
+
+            <br><br>
+            <label for="mensaje">Informacion adicional:</label>
+            <br> <textarea id="mensaje" name="mensaje" rows="6" cols="40" required></textarea>
+            <br><br> 
+            <button class= "boton" type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <aside>
+        <img src="https://images.pexels.com/photos/17653878/pexels-photo-17653878.jpeg" id="img-ass">
+    </aside>
+
+    <footer>
+        <section class="footer-contenido">
+            <div>
+                <h3>La Mikelana</h3>
+                <p>El sabor que alegra tus días.</p>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>
+                    Correo electrónico:
+                    <a href="mailto:contacto@lamikelana.com">contacto@lamikelana.com</a>
+                    <br>
+                    Teléfono: <a href="tel:+52 222 815 7087">+52 222 815 7087</a>
+                    <br>
+                    Dirección: Kabah No. 2, SM 222, Benito Juarez, Quintana Roo, 77517
+
+                </p>
+
+                <div>
+                    <h3>Horarios</h3>
+                    <p>Lunes a domingo</p>
+                    <p>10:00 a.m. - 9:00 p.m.</p>
+                </div>
+            </div>
+
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <p>
+                    <a href="https://www.facebook.com/lamikelana" target="_blank">Facebook</a>
+                    <br>
+                    <a href="https://www.instagram.com/lamikelana" target="_blank">Instagram</a>
+                    <br>
+                    <a href="https://twitter.com/lamikelana" target="_blank">Twitter</a>
+                </p>
+            </div>
+            <hr>
+            <p class="copyright">
+                © 2026 La Mikelana | Todos los derechos reservados
+            </p>
+
+        </section>
+    </footer>
+</body>
+
+</html>
