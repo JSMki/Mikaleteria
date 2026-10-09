@@ -6,51 +6,19 @@ body {
     padding: 0;
 }
 
-.logo {
-    position: absolute;
-    top: 10px;
-    width: 70px;
-    display: block;
-}
-
-.nav-header {
-    background-color: #E02179;
-    color: #FFFFFF;
-    padding: 25px;
-    text-align: center;
-}
-
-nav {
-    background-color: #000000;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    color: #FFFFFF;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #E02179;
-}
-
-.hero-banner {
+.home-hero {
     position: relative;
     width: 100%;
 }
 
-.hero-banner img {
+.home-hero__image {
     width: 100%;
     height: 500px;
     object-fit: cover;
     display: block;
 }
 
-.hero-content {
+.home-hero__content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -59,57 +27,57 @@ nav a:hover {
     color: black;
 }
 
-.hero-content h2 {
+.home-hero__title {
     font-size: 50px;
     font-weight: bold;
     margin: 0;
 }
 
-.hero-content p {
+.home-hero__subtitle {
     font-size: 25px;
     margin-top: 10px;
     text-transform: uppercase;
 }
 
-.cards-container {
+.products__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding-bottom: 31px;
 }
 
-.card img {
+.product-card__image {
     width: 100%;
     height: 350px;
     object-fit: cover;
 }
 
-#productos h2 {
+.products__title {
     display: block;
     text-transform: uppercase;
     text-align: center;
     padding: 25px;
 }
 
-.banner {
+.home-about {
     position: relative;
     width: 100%;
 }
 
-.banner img {
+.home-about__image {
     filter: blur(7px);
     width: 100%;
     height: fit-content;
 }
 
-.banner-text h3 {
+.home-about__title {
     font-size: 50px;
     font-weight: bold;
     padding: 25px;
     margin: 0;
 }
 
-.banner-text {
+.home-about__content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -120,42 +88,7 @@ nav a:hover {
     color: white;
 }
 
-.banner-text p {
+.home-about__text {
     font-size: 25px;
     margin-top: 10px;
-}
-
-footer {
-    background-color: #000000;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
-
-.footer-contenido {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    text-align: center;
-}
-
-.footer-contenido h3 {
-    color: #E02179;
-    margin-bottom: 10px;
-}
-
-.footer-contenido p {
-    margin: 6px 0;
-}
-
-.footer-contenido a {
-    color: #ec8dbd;
-    text-decoration: none;
-}
-
-.copyright {
-    margin-top: 25px;
-    padding-top: 10px;
-    text-align: center;
 }

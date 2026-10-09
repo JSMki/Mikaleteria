@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.order-page__main {
+    padding: 20px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.order-page__form-section {
+    margin-bottom: 30px;
+}
+
+.order-page__title {
+    color: #E02179;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.order-page__button {
+    background-color: #E02179;
+    color: #FFFFFF;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+.order-page__button:hover {
+    background-color: #000000;
+    border-color: #E02179;
+    border-width: 3px;
+}
+
+.order-page__image {
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+}

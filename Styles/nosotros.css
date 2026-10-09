@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Títulos */
+h2, h3, h4 {
+    color: #E02179;
+    text-align: center;
+}
+
+/* Texto */
+.about-page__text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Alineacion de imagenes */
+.about-page__gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.about-page__image {
+    padding: 20px;
+}
+
+/* Mover la segunda imagen más a la derecha */
+.about-page__image:last-child {
+    margin-left: 40px;
+}

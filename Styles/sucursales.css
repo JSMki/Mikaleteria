@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.branches__filter {
+    flex: 3;
+}
+
+.branches__list {
+    flex: 1;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.branches__filter-card,
+.branches__card {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border: 2px solid #E02179;
+    margin-bottom: 15px;
+}
+
+h2,
+h3,
+h4 {
+    color: #E02179;
+}
+
+.branches__button {
+    background-color: #E02179;
+    color: #FFFFFF;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+.branches__button:hover {
+    background-color: #000000;
+    border-color: #E02179;
+    border-width: 3px;
+}
+
+.branches__map {
+    width: 100%;
+    border: 0;
+}
+
+#codigo-postal {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #E02179;
+    border-radius: 4px;
+}

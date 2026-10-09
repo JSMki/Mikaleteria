@@ -3,86 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/normalize.css">
+    <link rel="stylesheet" href="Styles/headerfooter.css">
+    <link rel="stylesheet" href="Styles/style.css">
+
     <title>Inicio | La Mikelana</title>
 </head>
 <body>
-    
-    <header class="nav-header">
-        <h1>La Mikelana</h1>
+
+    <header class="site-header">
+        <h1 class="site-header__title">La Mikelana</h1>
         <a href="./index.html">
             <img src="images/logo.png"
-                alt="Logo" class="logo">
+                alt="Logo" class="site-header__logo">
         </a>
 
-        <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="pages/nosotros.html">Nosotros</a>
-            <a href="pages/servicios.html">Servicios</a>
-            <a href="pages/sucursales.html">Sucursales</a>
-            <a href="pages/contacto.html">Contacto</a>
+        <nav class="site-header__nav">
+            <a class="site-header__link" href="./index.html">Inicio</a>
+            <a class="site-header__link" href="pages/nosotros.html">Nosotros</a>
+            <a class="site-header__link" href="pages/servicios.html">Servicios</a>
+            <a class="site-header__link" href="pages/sucursales.html">Sucursales</a>
+            <a class="site-header__link" href="pages/contacto.html">Contacto</a>
         </nav>
 
     </header>
 
     <main>
 
-                <section class="hero-banner">
+                <section class="home-hero">
 
-            <img src="images/hero-banner.jpg" alt="Paletas">
+            <img class="home-hero__image" src="images/hero-banner.jpg" alt="Paletas">
 
-            <div class="hero-content">
+            <div class="home-hero__content">
 
-                <h2>100% natural</h2>
-                <p>El sabor que te encanta</p>
-
-            </div>
-
-        </section>
-
-        <section id="productos">
-
-            <h2>Nuestros productos</h2>
-
-            <div class="cards-container">
-
-                <article class="card">
-                    <img src="images/helados.jpg" alt="Helados">
-
-                    <p>Con una gran variedad de sabores y combinaciones irresistibles, nuestros helados son una explosión de frescura y sabor en cada cucharada.</p>
-                </article>
-
-                <article class="card">
-                    <img src="images/aguas_frescas.jpg" alt="Aguas frescas">
-
-                    <p>Con una gran variedad de sabores naturales y refrescantes, nuestras aguas frescas son la combinación perfecta para disfrutar y refrescarte en cada sorbo.</p>
-                </article>
-
-                <article class="card">
-                    <img src="images/gelatinas.jpg" alt="Gelatinas">
-
-                    <p>Con una gran variedad de sabores, colores y combinaciones, nuestras gelatinas son una opción fresca, ligera y deliciosa para disfrutar en cualquier momento.</p>
-
-                </article>
+                <h2 class="home-hero__title">100% natural</h2>
+                <p class="home-hero__subtitle">El sabor que te encanta</p>
 
             </div>
 
         </section>
 
-        <section class="banner">
+        <section class="products" id="productos">
 
-            <img src="images/banner.jpeg" alt="La Mikelana">
+            <h2 class="products__title">Nuestros productos</h2>
 
-            <div class="banner-text">
+            <div class="products__grid">
 
-                <h3>Acerca de Nosotros</h3>
-                    <p>En <strong>La Mikelana</strong> creemos que los mejores momentos se disfrutan con algo rico en la mano. Somos una paletería creada para compartir sabores, frescura y antojos que alegran cualquier día.</p>
+                <article class="product-card">
+                    <img class="product-card__image" src="images/helados.jpg" alt="Helados">
 
-                    <p>Nos encanta ofrecer una gran variedad de <strong>paletas, helados, aguas frescas, postres y gelatinas</strong>, preparados pensando en brindar una experiencia deliciosa en cada visita.</p>
+                    <p class="product-card__text">Con una gran variedad de sabores y combinaciones irresistibles, nuestros helados son una explosión de frescura y sabor en cada cucharada.</p>
+                </article>
 
-                    <p>Más que una paletería, queremos ser ese lugar al que siempre quieras volver: por tu sabor favorito, por probar algo nuevo o simplemente por darte un gusto.</p>
+                <article class="product-card">
+                    <img class="product-card__image" src="images/aguas_frescas.jpg" alt="Aguas frescas">
+
+                    <p class="product-card__text">Con una gran variedad de sabores naturales y refrescantes, nuestras aguas frescas son la combinación perfecta para disfrutar y refrescarte en cada sorbo.</p>
+                </article>
+
+                <article class="product-card">
+                    <img class="product-card__image" src="images/gelatinas.jpg" alt="Gelatinas">
+
+                    <p class="product-card__text">Con una gran variedad de sabores, colores y combinaciones, nuestras gelatinas son una opción fresca, ligera y deliciosa para disfrutar en cualquier momento.</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="home-about">
+
+            <img class="home-about__image" src="images/banner.jpeg" alt="La Mikelana">
+
+            <div class="home-about__content">
+
+                <h3 class="home-about__title">Acerca de Nosotros</h3>
+                    <p class="home-about__text">En <strong>La Mikelana</strong> creemos que los mejores momentos se disfrutan con algo rico en la mano. Somos una paletería creada para compartir sabores, frescura y antojos que alegran cualquier día.</p>
+
+                    <p class="home-about__text">Nos encanta ofrecer una gran variedad de <strong>paletas, helados, aguas frescas, postres y gelatinas</strong>, preparados pensando en brindar una experiencia deliciosa en cada visita.</p>
+
+                    <p class="home-about__text">Más que una paletería, queremos ser ese lugar al que siempre quieras volver: por tu sabor favorito, por probar algo nuevo o simplemente por darte un gusto.</p>
                     
-                    <p>En <strong>La Mikelana</strong>, cada sabor está hecho para disfrutarse.</p>
+                    <p class="home-about__text">En <strong>La Mikelana</strong>, cada sabor está hecho para disfrutarse.</p>
                 
             </div>
 
@@ -90,45 +93,45 @@
 
     </main>
 
- <footer>
-        <section class="footer-contenido">
+ <footer class="site-footer">
+        <section class="site-footer__content">
             <div>
-                <h3>La Mikelana</h3>
-                <p>El sabor que alegra tus días.</p>
+                <h3 class="site-footer__title">La Mikelana</h3>
+                <p class="site-footer__text">El sabor que alegra tus días.</p>
             </div>
 
             <div>
-                <h3>Contacto</h3>
-                <p>
+                <h3 class="site-footer__title">Contacto</h3>
+                <p class="site-footer__text">
                     Correo electrónico:
-                    <a href="mailto:contacto@lamikelana.com">contacto@lamikelana.com</a>
+                    <a class="site-footer__link" href="mailto:contacto@lamikelana.com">contacto@lamikelana.com</a>
                     <br>
-                    Teléfono: <a href="tel:+52 222 815 7087">+52 222 815 7087</a>
+                    Teléfono: <a class="site-footer__link" href="tel:+52 222 815 7087">+52 222 815 7087</a>
                     <br>
                     Dirección: Kabah No. 2, SM 222, Benito Juarez, Quintana Roo, 77517
 
                 </p>
 
                 <div>
-                    <h3>Horarios</h3>
-                    <p>Lunes a domingo</p>
-                    <p>10:00 a.m. - 9:00 p.m.</p>
+                    <h3 class="site-footer__title">Horarios</h3>
+                    <p class="site-footer__text">Lunes a domingo</p>
+                    <p class="site-footer__text">10:00 a.m. - 9:00 p.m.</p>
                 </div>
             </div>
 
 
             <div>
-                <h3>Redes Sociales</h3>
-                <p>
-                    <a href="https://www.facebook.com/lamikelana" target="_blank">Facebook</a>
+                <h3 class="site-footer__title">Redes Sociales</h3>
+                <p class="site-footer__text">
+                    <a class="site-footer__link" href="https://www.facebook.com/lamikelana" target="_blank">Facebook</a>
                     <br>
-                    <a href="https://www.instagram.com/lamikelana" target="_blank">Instagram</a>
+                    <a class="site-footer__link" href="https://www.instagram.com/lamikelana" target="_blank">Instagram</a>
                     <br>
-                    <a href="https://twitter.com/lamikelana" target="_blank">Twitter</a>
+                    <a class="site-footer__link" href="https://twitter.com/lamikelana" target="_blank">Twitter</a>
                 </p>
             </div>
             <hr>
-            <p class="copyright">
+            <p class="site-footer__copyright">
                 © 2026 La Mikelana | Todos los derechos reservados
             </p>
 
