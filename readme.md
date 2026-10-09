@@ -24,7 +24,7 @@ Este proyecto consiste en el sitio web de la paletería "La Mikelana". Su propó
 
 1. Clona este repositorio:
 
-   [GitHub](https://github.com/JSMki/Mikaleteria.git)
+   https://github.com/JSMki/Mikaleteria.git
 
 2. Navega a la carpeta del proyecto:
 
