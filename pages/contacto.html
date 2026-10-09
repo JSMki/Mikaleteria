@@ -3,122 +3,145 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport">
-    <link rel="stylesheet" href="../Styles/normalize.css">
-    <link rel="stylesheet" href="../Styles/headerfooter.css">
-    <link rel="stylesheet" href="../Styles/contacto.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | La Mikelana</title>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="/Styles/normalize.css">
+    <link rel="stylesheet" href="/Styles/headerfooter.css">
+    <link rel="stylesheet" href="/Styles/contacto.css">
+    
 </head>
 
 <body>
-    <header class="site-header order-page__header">
-        <main class="order-page__main">
-            <section class="order-page__intro">
-                <h1 class="site-header__title">Contacto </h1>
-                <p class="order-page__intro-text"> Haz tu pedido en el siguiente apartado, brindandonos tu informacion o ponte encontacto directo con
-                    nosotros. </p>
 
-            <a href="../index.html">
-                <img src="../images/logo.png" alt="Logo" class="site-header__logo">
-            </a>
+    <header class="encabezado">
 
-            <nav class="site-header__nav">
-                <a class="site-header__link" href="../index.html">Inicio</a>
-                <a class="site-header__link" href="./nosotros.html">Nosotros</a>
-                <a class="site-header__link" href="./servicios.html">Servicios</a>
-                <a class="site-header__link" href="./sucursales.html">Sucursales</a>
-                <a class="site-header__link" href="./contacto.html">Contacto</a>
-            </nav>
+        <a href="../index.html">
+            <img src="../images/logo.png" alt="Logo de La Mikelana" class="logo">
+        </a>
 
-            </section>
+        <section class="encabezado__presentacion">
+            <h1>Contacto</h1>
+            <p>
+                Haz tu pedido en el siguiente apartado, brindándonos tu información
+                o ponte en contacto directo con nosotros.
+            </p>
+        </section>
+
+        <nav class="navegacion">
+            <a href="../index.html">Inicio</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./servicios.html">Servicios</a>
+            <a href="./sucursales.html">Sucursales</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+
     </header>
 
-    <section class="order-page__form-section">
-        <h2 class="order-page__title">Datos del Pedido</h2>
-        <form class="order-page__form">
-            <label class="order-page__label" for="nombre">Nombre:</label>
-            <br>
-            <input class="order-page__field" type="text" id="nombre" name="nombre" required>
-            <br>
-            <label class="order-page__label" for="numero">Numero de telefono:</label>
-            <br>
-            <input class="order-page__field" type="numero" id="numero" name="numero" required>
-            <p class="order-page__prompt">Pedido:</p>
-            <Div class="order-page__choice">
-                <input class="order-page__choice-input" type="radio" name="nieve" value="nieve" id="nieve">
-                <label class="order-page__choice-label" for="masculino">Nieve</label>
-            </Div>
+    <main class="contenido">
 
-            <Div class="order-page__choice">
-                <input class="order-page__choice-input" type="radio" name="helado" id="helado" value="helado">
-                <label class="order-page__choice-label" for="femenino">Helado</label>
-            </Div>
+        <section class="pedido">
+            <h2 class="pedido__titulo">Datos del Pedido</h2>
 
-            <Div class="order-page__choice">
-                <input class="order-page__choice-input" type="radio" name="paleta" id="paleta" value="paleta">
-                <label class="order-page__choice-label" for="femenino">Paleta</label>
-            </Div>
+            <form class="pedido__formulario">
 
-            <Div class="order-page__choice">
-                <input class="order-page__choice-input" type="radio" name="agua" id="agua" value="agua">
-                <label class="order-page__choice-label" for="femenino">Agua</label>
-            </Div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-            <br><br>
-            <label class="order-page__label" for="mensaje">Informacion adicional:</label>
-            <br> <textarea class="order-page__message" id="mensaje" name="mensaje" rows="6" cols="40" required></textarea>
-            <br><br> 
-            <button class="order-page__button" type="submit">Enviar mensaje</button>
-        </form>
-    </section>
+                <label for="numero">Numero de telefono:</label>
+                <input type="tel" id="numero" name="numero" required>
 
-    <aside class="order-page__aside">
-        <img src="https://images.pexels.com/photos/17653878/pexels-photo-17653878.jpeg" class="order-page__image">
-    </aside>
+                <fieldset class="pedido__opciones">
+                    <legend class="pedido__subtitulo">Pedido:</legend>
 
-    <footer class="site-footer">
-        <section class="site-footer__content">
-            <div>
-                <h3 class="site-footer__title">La Mikelana</h3>
-                <p class="site-footer__text">El sabor que alegra tus días.</p>
+                    <div class="pedido__opcion">
+                        <input type="checkbox" name="pedido[]" value="nieve" id="nieve">
+                        <label for="nieve">Nieve</label>
+                    </div>
+
+                    <div class="pedido__opcion">
+                        <input type="checkbox" name="pedido[]" value="helado" id="helado">
+                        <label for="helado">Helado</label>
+                    </div>
+
+                    <div class="pedido__opcion">
+                        <input type="checkbox" name="pedido[]" value="paleta" id="paleta">
+                        <label for="paleta">Paleta</label>
+                    </div>
+
+                    <div class="pedido__opcion">
+                        <input type="checkbox" name="pedido[]" value="agua" id="agua">
+                        <label for="agua">Agua</label>
+                    </div>
+                </fieldset>
+
+                <label for="mensaje">Informacion adicional:</label>
+                <textarea id="mensaje" name="mensaje" rows="6" cols="40" required></textarea>
+
+                <button class="boton" type="submit">Enviar mensaje</button>
+
+            </form>
+        </section>
+
+        <aside class="informacion">
+            <img
+                src="/images/Menu.png"
+                alt="Imagen del Menu de La Mikelana"
+                class="informacion__imagen"
+                id="img-ass">
+        </aside>
+
+    </main>
+
+    <footer class="pie-pagina">
+
+        <section class="footer-contenido">
+
+            <div class="footer-contenido__columna">
+                <h3>La Mikelana</h3>
+                <p>El sabor que alegra tus días.</p>
             </div>
 
-            <div>
-                <h3 class="site-footer__title">Contacto</h3>
-                <p class="site-footer__text">
+            <div class="footer-contenido__columna">
+                <h3>Contacto</h3>
+                <p>
                     Correo electrónico:
-                    <a class="site-footer__link" href="mailto:contacto@lamikelana.com">contacto@lamikelana.com</a>
+                    <a href="mailto:contacto@lamikelana.com">contacto@lamikelana.com</a>
                     <br>
-                    Teléfono: <a class="site-footer__link" href="tel:+52 222 815 7087">+52 222 815 7087</a>
+                    Teléfono:
+                    <a href="tel:+522228157087">+52 222 815 7087</a>
                     <br>
                     Dirección: Kabah No. 2, SM 222, Benito Juarez, Quintana Roo, 77517
-
                 </p>
 
-                <div>
-                    <h3 class="site-footer__title">Horarios</h3>
-                    <p class="site-footer__text">Lunes a domingo</p>
-                    <p class="site-footer__text">10:00 a.m. - 9:00 p.m.</p>
+                <div class="footer-contenido__horarios">
+                    <h3>Horarios</h3>
+                    <p>Lunes a domingo</p>
+                    <p>10:00 a.m. - 9:00 p.m.</p>
                 </div>
             </div>
 
-
-            <div>
-                <h3 class="site-footer__title">Redes Sociales</h3>
-                <p class="site-footer__text">
-                    <a class="site-footer__link" href="https://www.facebook.com/lamikelana" target="_blank">Facebook</a>
+            <div class="footer-contenido__columna">
+                <h3>Redes Sociales</h3>
+                <p>
+                    <a href="https://www.facebook.com/lamikelana" target="_blank" rel="noopener noreferrer">Facebook</a>
                     <br>
-                    <a class="site-footer__link" href="https://www.instagram.com/lamikelana" target="_blank">Instagram</a>
+                    <a href="https://www.instagram.com/lamikelana" target="_blank" rel="noopener noreferrer">Instagram</a>
                     <br>
-                    <a class="site-footer__link" href="https://twitter.com/lamikelana" target="_blank">Twitter</a>
+                    <a href="https://twitter.com/lamikelana" target="_blank" rel="noopener noreferrer">Twitter</a>
                 </p>
             </div>
-            <hr>
-            <p class="site-footer__copyright">
-                © 2026 La Mikelana | Todos los derechos reservados
-            </p>
 
         </section>
-    </footer>
-</body>
 
+        <hr>
+
+        <p class="copyright">
+            © 2026 La Mikelana | Todos los derechos reservados
+        </p>
+
+    </footer>
+
+</body>
 </html>
