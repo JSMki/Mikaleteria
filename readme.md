@@ -1,14 +1,14 @@
 # La Mikelana - Sitio Web
 
-Sitio web informativo para la paletería y heladería **La Mikelana**, desarrollado como proyecto académico para mostrar sus productos, histori, ubicación de sucursales y contaccto
+Sitio web informativo para la paletería y heladería **La Mikelana**, desarrollado como proyecto académico para mostrar sus productos, historia, ubicación de sucursales y contacto.
 
 ## Descripción
 
-Este proyecto consiste en el sitio web de la paletería "La Mikelana"[cite: 1, 3]. Su propósito principal es dar a conocer la variedad de helados, paletas, aguas frescas y gelatinas que ofrece el negocio[cite: 3], brindar información sobre su historia y facilitar a los clientes la ubicación de sus distintas sucursales e información de contacto.
+Este proyecto consiste en el sitio web de la paletería "La Mikelana". Su propósito principal es dar a conocer la variedad de helados, paletas, aguas frescas y gelatinas que ofrece el negocio, brindar información sobre su historia y facilitar a los clientes la ubicación de sus distintas sucursales e información de contacto.
 
-- **El problema que resuelve:** Centraliza la información comercial del negocio, el menú de productos y la localización geográfica de las tiendas para los clientes[cite: 1, 3].
-- **Los objetivos principales:** Crear una interfaz responsiva, intuitiva y visualmente alineada con la identidad de la marca utilizando estándares modernos de desarrollo web[cite: 1, 3].
-- **El contexto o motivación:** Proyecto escolar correspondiente al primer parcial para la creación y desarrollo de un sitio web funcional con HTML y CSS
+- **El problema que resuelve:** Centraliza la información comercial del negocio, el menú de productos y la localización geográfica de las tiendas para los clientes.
+- **Los objetivos principales:** Crear una interfaz responsiva, intuitiva y visualmente alineada con la identidad de la marca utilizando estándares modernos de desarrollo web.
+- **El contexto o motivación:** Proyecto escolar correspondiente al primer parcial para la creación y desarrollo de un sitio web funcional con HTML y CSS.
 
 ## Tecnologías Utilizadas
 
@@ -24,11 +24,11 @@ Este proyecto consiste en el sitio web de la paletería "La Mikelana"[cite: 1, 3
 
 1. Clona este repositorio:
 
-   (falta info)
+   [GitHub](https://github.com/JSMki/Mikaleteria.git)
 
 2. Navega a la carpeta del proyecto:
 
-   cd lamikelana
+   cd Mikaleteria
 
 3. Abre el archivo `./index.html` en tu navegador
 
@@ -46,10 +46,10 @@ Explica cómo usar tu proyecto:
 ## Características
 
 - Estructura organizada dentro del directorio `lamikelana/pages/`
-- Páginas dedicadas para Inicio, Nosotros, Productos, Sucursales y Contacto
-- Catálogo visual interactivo de helados, paletas, aguas frescas y gelatinas
-- Buscador de sucursales con filtro por Código Postal, Estado y mapa incrustado (aun falta interaccion completa de usuario)
-- Información de contacto directa y formulario 
+- Páginas dedicadas para Inicio, Nosotros, Productos, Sucursales y Contacto.
+- Catálogo visual interactivo de helados, paletas, aguas frescas y gelatinas.
+- Buscador de sucursales con filtro por Código Postal, Estado y mapa incrustado (aún falta interacción completa de usuario).
+- Información de contacto directa y formulario.
 
 ## Autores
 
